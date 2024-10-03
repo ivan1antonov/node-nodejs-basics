@@ -1,5 +1,6 @@
+import fs from 'node:fs/promises';
+
 const create = async () => {
-  const fs = require('node:fs/promises');
   const path = './files/fresh.txt';
   const fileExist = async () => {
     try {
