@@ -7,10 +7,6 @@ const list = async () => {
   const __dirname = path.dirname(__filename);
   const directory = path.join(__dirname, 'files');
 
-  console.log('__filename:', __filename);
-  console.log('__dirname:', __dirname);
-  console.log('directory:', directory);
-
   try {
     const readDir = await fs.readdir(directory);
     console.log('files:', readDir);
